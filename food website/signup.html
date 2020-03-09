@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="Content-Language" content="en">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <title>Food Ordering</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+      <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+      <meta name="msapplication-tap-highlight" content="no">
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <section id="BannerSection" style="margin:0px;">
+<div class="overlay">
+            <div class="container">
+					
+					<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 return-cty1 signup-dtls"  id="contact-form">
+						<h4>Sign up</h4>
+						  <div class="login-cnt">
+						  <form action="home.html">
+						   <label>Full Name</label>
+									  <div class="form-group col-md-12" style="margin-bottom:20px;padding:0px;">
+									  
+										<input type="text" class="form-control" name="username" id="username" placeholder="Full Name" required>
+										<i class="material-icons">person</i>
+									 </div>
+									  <div class="clearfix"></div>
+						   <label>Email</label>
+									  <div class="form-group col-md-12" style="margin-bottom:20px;padding:0px;">
+									  
+										<input type="text" class="form-control" name="username" id="username" placeholder="Email" required>
+										<i class="material-icons">person</i>
+									 </div>
+									 <div class="clearfix"></div>
+										 <label>Password</label>  
+									  <div class="form-group col-md-12" style="margin-bottom:20px;padding:0px;">
+										<input type="password" class="form-control" name="password" id="password" placeholder="Enter your password"  required>
+										<i class="material-icons">lock</i>
+									 </div>
+									 <div class="clearfix"></div>
+										 <label>Confirm Password</label>  
+									  <div class="form-group col-md-12" style="margin-bottom:20px;padding:0px;">
+										<input type="password" class="form-control" name="password" id="password" placeholder="Enter your password"  required>
+										<i class="material-icons">lock</i>
+									 </div>
+									 <div class="clearfix"></div>
+									
+										<a href=""><button type="submit" class="btn btn-primary btnlogin">Sign up</button></a>
+									</div> 
+							</form>
+					
+					
+			   </div>
+			   </div>
+		  </div>
+	  </section>
+	  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+	  <script>
+		$(document).ready(function () {
+
+    $('#contact-form').validate({
+        rules: {
+            name: {
+                minlength: 2,
+                required: true
+            },
+            password: {
+                required: true,
+                 password: true
+            },
+          
+        },
+        highlight: function (element) {
+            $(element).closest('.control-group').removeClass('success').addClass('error');
+        },
+        success: function (element) {
+            element.text('OK!').addClass('valid')
+                .closest('.control-group').removeClass('error').addClass('success');
+        }
+    });
+
+});
+	  </script>
+   </body>
+</html>.

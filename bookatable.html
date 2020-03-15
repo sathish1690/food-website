@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="Content-Language" content="en">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <title>Food Ordering</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.1/owl.carousel.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.1/owl.theme.css" rel="stylesheet">	 
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="css/jquery.flex-photo-gallery.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+   </head>
+
+   <body>
+      
+<section>
+<nav class="navbar navbar-default gallery-menu" style="margin-bottom:0px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Indian<br> Restaurant</a>
+    </div>
+    <ul class="nav navbar-nav pull-right">
+      <li ><a href="home.html">Home</a></li>
+      <li><a href="home.html">About</a></li>
+      <li><a href="gallery.html">Food Gallery</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li class="active"><a href="bookatable.html">Book Table</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="index.html">Login</a></li>
+      <li><a href="signup.html">Sign up</a></li>
+    </ul>
+  </div>
+</nav>
+</section>
+
+<section id="Booktable">
+		     <div class="container">
+					<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3"  id="contact-form">
+					  <div class="book-dtls" style="margin-top:5%">
+						<h4 class="text-center">Book a table</h4>
+						  <div class="login-cnt">
+						  <form action="home.html">
+									  <div class="form-group col-md-12" style="margin-bottom:20px;padding:0px;">
+										<input type="text" class="form-control" name="username" id="username" value="Name*" required>
+									 </div>
+									 <div class="clearfix"></div>
+										  
+									  <div class="form-group col-md-12" style="margin-bottom:20px;padding:0px;">
+										<input type="text" class="form-control" name="email" id="email" value="Email*"  required>
+									 </div>
+										  
+									  <div class="form-group col-md-12" style="margin-bottom:20px;padding:0px;">
+										<input type="text" class="form-control" name="Mobno" id="Mobno" value="Mobile No*"  required>
+									 </div>
+										  
+									  <div class="form-group col-md-12 dateselect" style="margin-bottom:20px;padding:0px;">
+									<input type="text" id="datepicker" class="form-control" value="Select Booking Date*">
+										<i class="material-icons">date_range</i>
+									 </div>
+									  <div class="form-group col-md-12" style="padding:0px;">
+									   <select id="Branch" class="form-control" style="margin-bottom:10px">
+											 <option value="adyar">Select Time Slot*</option>
+										  <option value="adyar">12:00PM - 02:00PM</option>
+										  <option value="guindy">02:30PM - 04:30PM</option>
+										  <option value="tambaram">07:00PM - 09:00PM</option>
+										  <option value="tambaram">09:30PM - 11:00PM</option>
+										</select>
+										
+									 </div>
+									  <div class="form-group col-md-12" style="padding:0px;">
+									   <select id="Branch" class="form-control" style="margin-bottom:10px">
+											 <option value="adyar">Select your branch</option>
+										  <option value="adyar">Adyar</option>
+										  <option value="guindy">Guindy</option>
+										  <option value="tambaram">Tambaram</option>
+										</select>
+									 </div>
+									  <div class="form-group col-md-12" style="margin-bottom:20px;padding:0px;">
+										<input type="text" class="form-control" name="occasion" id="occasion" value="Select any occasion(if any)"  required>
+									 </div>
+									  <div class="form-group col-md-12" style="padding:0px;">
+									 
+										<input type="text" class="form-control" name="Mobno" id="Branch" value="Please enter the Date of Birth(optional)"  required>
+									 </div>
+									  <div class="form-group col-md-12" style="margin-bottom:20px;padding:0px;">
+										<textarea class="form-control"  name="message" rows="4" cols="50" placeholder="Any Special Message" ></textarea>
+									 </div>
+									 <div class="clearfix"></div>
+										<a href="#"><button type="submit" class="btn btn-primary bookbtn">Book a Table</button></a>
+									</div> 
+							</form>
+							</div>
+							</div>
+					
+					
+			   </div>					
+  
+ </section>
+<section class="footer">
+	<div class="container">
+	<p class="text-center"> © 2020 All copyrights reserved</p>
+	</div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.1/owl.carousel.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <script type="text/javascript" src="js/jquery.flex-photo-gallery.js"></script>
+<script>
+   new WOW().init();
+</script>
+<script type="text/javascript">
+$(function() {
+        $( "#datepicker" ).datepicker({
+            dateFormat : 'mm/dd/yy',
+            changeMonth : true,
+            changeYear : true,
+            yearRange: '-100y:c+nn',
+            maxDate: '-1d'
+        });
+    });
+   </script> 
+   </body>
+</html>
